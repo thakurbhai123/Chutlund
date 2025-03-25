@@ -152,13 +152,13 @@ HELP_15 = """
 
 # New Clone Bot
 CLONE_HELP = """
-<b><u>Cʟᴏɴᴇ ᴄᴏᴍᴍᴀɴᴅs :</b></u>
+<b><u>ᴄʟᴏɴᴇ ᴄᴏᴍᴍᴀɴᴅs :</b></u>
 
-<b><u>Aʟʟ Usᴇʀs :</b></u>
-/clone– Cʟᴏɴᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ᴜsɪɴɢ ᴛʜᴇ Bᴏᴛ Tᴏᴋᴇɴ ғʀᴏᴍ @BotFather.
+<b><u>ᴀʟʟ ᴜsᴇʀs :</b></u>
+/clone – ᴄʟᴏɴᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ ᴛᴏᴋᴇɴ ғʀᴏᴍ @BotFather.
 <b>ᴇxᴀᴍᴩʟᴇ:</b> <code>/clone token paste here</code>
 
-/rmbot – Dᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʙᴏᴛ.
+/rmbot – ᴅᴇʟᴇᴛᴇ ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʙᴏᴛ.
 <b>ᴇxᴀᴍᴩʟᴇ:</b> <code>/rmbot token paste here</code>
 
 /mybot – Cʜᴇᴄᴋ ᴛʜᴇ ʙᴏᴛs ʏᴏᴜ'ᴠᴇ ᴄʟᴏɴᴇᴅ.
