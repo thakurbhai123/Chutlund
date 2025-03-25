@@ -15,13 +15,13 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_ID = getenv("BOT_ID")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","ZeoXpro")
+OWNER_USERNAME = getenv("OWNER_USERNAME","purvibots")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "AqiaBot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "MayaMusicRobot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "Aqia")
+BOT_NAME = getenv("BOT_NAME" , "Maya")
 # ---------------------------------------------------------
-ASSUSERNAME = getenv("ASSUSERNAME" , "AqiaPro")
+ASSUSERNAME = getenv("ASSUSERNAME" , "Sonali")
 # ---------------------------------------------------------
 
 
@@ -41,7 +41,7 @@ LOGGER_ID = int(getenv("LOGGER_ID"))
 CLONE_LOGGER = LOGGER_ID
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 7355202884))
+OWNER_ID = int(getenv("OWNER_ID", 8143754205))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 # config.py
@@ -54,10 +54,10 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-SOURCE = getenv("SOURCE", "https://github.com/TeamProBots/Clonify")
+SOURCE = getenv("SOURCE", "https://github.com/TEAMPURVI/SONALI_MUSIC")
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TeamProBots/Clonify",
+    "https://github.com/Im-NotCoder/PtaHai",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -72,9 +72,9 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ProBotts")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ProBotGc")
-CHAT = getenv("CHAT", "https://t.me/ProBotGc")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/PURVI_SUPPORT")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/PURVI_UPDATES")
+CHAT = getenv("CHAT", "https://t.me/+gMy8Cp190ediNzZl")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -132,15 +132,6 @@ confirmer = {}
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-# ------------------------------------
-
-# ------------------------------------------------------------------------
-# ------------------------------------------------------------------------
-# ------------------------------------------------------------------------
-# ------------------------------------------------------------------------
-# ------------------------------------------------------------------------
-# ------------------------------------------------------------------------
-# ------------------------------------------------------------------------
 
 STREAMI_PICS = [
 "https://i.ibb.co/whgkNq6n/start-img-1.jpg",
