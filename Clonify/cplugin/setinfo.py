@@ -127,11 +127,11 @@ async def bot_info(client: Client, message: Message, _):
     
      # Format and send the response
     await message.reply_text(
-        f"**Bᴏᴛ Iɴғᴏ:**\n"
-        f"➤ **Bᴏᴛ ID:** `{bot_id}`\n"
-        f"➤ **Cʜᴀɴɴᴇʟ:** @{channel}\n"
-        f"➤ **Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ:** @{support}\n"
-        f"➤ **Bᴏᴛ Sᴛᴀᴛᴜs:** {bot_status}"
+        f"**ʙᴏᴛ ɪɴғᴏ:**\n"
+        f"➤ **ʙᴏᴛ ɪᴅ:** `{bot_id}`\n"
+        f"➤ **ᴄʜᴀɴɴᴇʟ:** @{channel}\n"
+        f"➤ **sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ:** @{support}\n"
+        f"➤ **ʙᴏᴛ sᴛᴀᴛᴜs:** {bot_status}"
     )
 
 
@@ -168,9 +168,9 @@ async def check_log_status(client, message, _):
     else:
         C_LOGGER_VALUE = log_channel
 
-    text = f"**Lᴏɢɢɢᴇʀ Sᴛᴀᴛᴜs:**\n\n"
-    text += f" - Sᴛᴀᴛᴜs: `{C_LOGGER_STATUS}`\n"
-    text += f" - Lᴏɢɢᴇʀ ID: `{C_LOGGER_VALUE}`"
+    text = f"**ʟᴏɢɢɢᴇʀ sᴛᴀᴛᴜs :**\n\n"
+    text += f" - sᴛᴀᴛᴜs : `{C_LOGGER_STATUS}`\n"
+    text += f" - ʟᴏɢɢᴇʀ ɪᴅ : `{C_LOGGER_VALUE}`"
 
     await message.reply_text(text)
 
@@ -207,7 +207,7 @@ async def toggle_logging(client: Client, message: Message, _):
     if result.modified_count > 0 or result.upserted_id:
         await message.reply_text(f"{'ᴇɴᴀʙʟᴇᴅ ʟᴏɢɢɪɴɢ.' if logging_status else 'ᴅɪsᴀʙʟᴇᴅ ʟᴏɢɢɪɴɢ.'}")
     else:
-        await message.reply_text("Fᴀɪʟᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ʟᴏɢɢɪɴɢ sᴛᴀᴛᴜs!")
+        await message.reply_text("ғᴀɪʟᴇᴅ ᴛᴏ ᴜᴘᴅᴀᴛᴇ ʟᴏɢɢɪɴɢ sᴛᴀᴛᴜs!")
 
 
 # Set logger ID for the bot
@@ -229,13 +229,13 @@ async def set_log_channel(client: Client, message: Message, _):
     try:
         group_id = int(message.command[1])
     except ValueError:
-        return await message.reply_text("Iɴᴠᴀʟɪᴅ Lᴏɢɢᴇʀ ID! Pʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ɴᴜᴍᴇʀɪᴄ ᴠᴀʟᴜᴇ.")
+        return await message.reply_text("ɪɴᴠᴀʟɪᴅ ʟᴏɢɢᴇʀ ɪᴅ !! ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ɴᴜᴍᴇʀɪᴄ ᴠᴀʟᴜᴇ.")
 
     if not str(group_id).startswith("-100"):
-        return await message.reply_text("Iɴᴠᴀʟɪᴅ Lᴏɢɢᴇʀ ID! ᴏʀ Mᴀᴋᴇ sᴜʀᴇ ʙᴏᴛ ɪs ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ ᴀɴᴅ ʜᴀs ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇs.")
+        return await message.reply_text("ɪɴᴠᴀʟɪᴅ ʟᴏɢɢᴇʀ ɪᴅ !! ᴏʀ ᴍᴀᴋᴇ sᴜʀᴇ ʙᴏᴛ ɪs ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘ ᴀɴᴅ ʜᴀs ᴘᴇʀᴍɪssɪᴏɴ ᴛᴏ sᴇɴᴅ ᴍᴇssᴀɢᴇs.")
 
     try:
-        test_msg = await client.send_message(group_id, "Bᴏᴛ ʟᴏɢɢɪɴɢ ᴇɴᴀʙʟᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!")
+        test_msg = await client.send_message(group_id, "ʙᴏᴛ ʟᴏɢɢɪɴɢ ᴇɴᴀʙʟᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ!")
         
         result = clonebotdb.update_one(
             {"bot_id": bot_id}, 
@@ -244,9 +244,9 @@ async def set_log_channel(client: Client, message: Message, _):
         )
 
         if result.modified_count > 0 or result.upserted_id:
-            return await message.reply_text(f"Lᴏɢɢɪɴɢ ᴇɴᴀʙʟᴇᴅ ғᴏʀ `{group_id}`.")
+            return await message.reply_text(f"ʟᴏɢɢɪɴɢ ᴇɴᴀʙʟᴇᴅ ғᴏʀ `{group_id}`.")
         else:
-            return await message.reply_text("Fᴀɪʟᴇᴅ ᴛᴏ sᴇᴛ ʟᴏɢ ɢʀᴏᴜᴘ!")
+            return await message.reply_text("ғᴀɪʟᴇᴅ ᴛᴏ sᴇᴛ ʟᴏɢ ɢʀᴏᴜᴘ!")
 
     except Exception as e:
-        return await message.reply_text(f"Bᴏᴛ ᴄᴀɴ'ᴛ sᴇɴᴅ ᴍᴇssᴀɢᴇs ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ!")
+        return await message.reply_text(f"ʙᴏᴛ ᴄᴀɴ'ᴛ sᴇɴᴅ ᴍᴇssᴀɢᴇs ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ!")
