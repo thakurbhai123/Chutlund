@@ -28,7 +28,7 @@ from config import SUPPORT_CHAT, OWNER_ID
 from datetime import datetime
 CLONES = set()
 
-C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪᴛ: @AqiaBot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n - Uᴘᴅᴀᴛᴇ: @ProBotts\n - Sᴜᴘᴘᴏʀᴛ: @ProBotGc"
+C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪᴛ: @MayaMusicRobot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n - Uᴘᴅᴀᴛᴇ: @PURVI_SUPPORT\n - Sᴜᴘᴘᴏʀᴛ: @PURVI_UPDATES"
 
 C_BOT_COMMANDS = [
                 {"command": "/start", "description": "sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ"},
@@ -91,7 +91,7 @@ async def clone_txt(client, message, _):
         try:
 
             await app.send_message(
-                CLONE_LOGGER, f"**#NewClonedBot**\n\n**Bᴏᴛ:- {bot.mention}**\n**Usᴇʀɴᴀᴍᴇ:** @{bot.username}\n**Bᴏᴛ ID :** `{bot_id}`\n\n**Oᴡɴᴇʀ : ** [{c_b_owner_fname}](tg://user?id={c_bot_owner})"
+                CLONE_LOGGER, f"**#New_Cloned_Bot**\n\n**ʙᴏᴛ:- {bot.mention}**\n**ᴜsᴇʀɴᴀᴍᴇ:** @{bot.username}\n**ʙᴏᴛ ɪᴅ :** `{bot_id}`\n\n**ᴏᴡɴᴇʀ : ** [{c_b_owner_fname}](tg://user?id={c_bot_owner})"
             )
             await userbot.send_message(bot.username, "/start")
 
@@ -102,8 +102,8 @@ async def clone_txt(client, message, _):
                 "name": bot.first_name,
                 "token": bot_token,
                 "username": bot.username,
-                "channel": "ProBotts",
-                "support": "ProBotGc",
+                "channel": "PURVI_SUPPORT",
+                "support": "PURVI_UPDATES",
                 "premium" : False,
                 "Date" : False,
             }
@@ -134,7 +134,7 @@ async def clone_txt(client, message, _):
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**ᴋɪɴᴅʟʏ ғᴏᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @ProBotGc ᴛᴏ ɢᴇᴛ ᴀssɪsᴛᴀɴᴄᴇ**"
+                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**ᴋɪɴᴅʟʏ ғᴏᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @ll_ALPHA_BABY_lll ᴛᴏ ɢᴇᴛ ᴀssɪsᴛᴀɴᴄᴇ**"
             )
     else:
         await message.reply_text(_["C_B_H_1"])
@@ -169,11 +169,11 @@ async def delete_cloned_bot(client, message, _):
         
         if cloned_bot:
 
-            bot_info = f"**Bot ID**: `{cloned_bot['bot_id']}`\n" \
-           f"**Bᴏᴛ Nᴀᴍᴇ**: {cloned_bot['name']}\n" \
-           f"**Usᴇʀɴᴀᴍᴇ**: @{cloned_bot['username']}\n" \
-           f"**Tᴏᴋᴇɴ**: `{cloned_bot['token']}`\n" \
-           f"**Oᴡɴᴇʀ**: `{cloned_bot['user_id']}`\n"
+            bot_info = f"**ʙᴏᴛ ɪᴅ**: `{cloned_bot['bot_id']}`\n" \
+           f"**ʙᴏᴛ ɴᴀᴍᴇ**: {cloned_bot['name']}\n" \
+           f"**ᴜsᴇʀɴᴀᴍᴇ**: @{cloned_bot['username']}\n" \
+           f"**ᴛᴏᴋᴇɴ**: `{cloned_bot['token']}`\n" \
+           f"**ᴏᴡɴᴇʀ**: `{cloned_bot['user_id']}`\n"
 
             C_OWNER = get_owner_id_from_db(cloned_bot['bot_id'])
             OWNERS = [OWNER_ID, C_OWNER]
@@ -269,11 +269,11 @@ async def my_cloned_bots(client, message, _):
             return
         
         total_clones = len(cloned_bots)
-        text = f"**Yᴏᴜʀ Cʟᴏɴᴇᴅ Bᴏᴛs: {total_clones}**\n\n"
+        text = f"**ʏᴏᴜʀ ᴄʟᴏɴᴇᴅ ʙᴏᴛs : {total_clones}**\n\n"
         
         for bot in cloned_bots:
-            text += f"**Bᴏᴛ Nᴀᴍᴇs:** {bot['name']}\n"
-            text += f"**Bᴏᴛ Usᴇʀɴᴀᴍᴇ:** @{bot['username']}\n\n"
+            text += f"**ʙᴏᴛ ɴᴀᴍᴇs:** {bot['name']}\n"
+            text += f"**ʙᴏᴛ ᴜsᴇʀɴᴀᴍᴇ:** @{bot['username']}\n\n"
         
         await message.reply_text(text)
     except Exception as e:
@@ -292,7 +292,7 @@ async def list_cloned_bots(client, message, _):
             return
 
         total_clones = len(cloned_bots)
-        text = f"**Tᴏᴛᴀʟ Cʟᴏɴᴇᴅ Bᴏᴛs: `{total_clones}`**\n\n"
+        text = f"**ᴛᴏᴛᴀʟ ᴄʟᴏɴᴇᴅ ʙᴏᴛs: `{total_clones}`**\n\n"
 
         chunk_size = 10
         chunks = [cloned_bots[i:i + chunk_size] for i in range(0, len(cloned_bots), chunk_size)]
@@ -312,10 +312,10 @@ async def list_cloned_bots(client, message, _):
                     owner_name = "Unknown User"
                     owner_profile_link = "#"
 
-                chunk_text += f"**Bᴏᴛ ID:** `{bot['bot_id']}`\n"
-                chunk_text += f"**Bᴏᴛ Nᴀᴍᴇ:** {bot['name']}\n"
-                chunk_text += f"**Bᴏᴛ Usᴇʀɴᴀᴍᴇ:** @{bot['username']}\n"
-                chunk_text += f"**Oᴡɴᴇʀ:** [{owner_name}]({owner_profile_link})\n\n"
+                chunk_text += f"**ʙᴏᴛ ɪᴅ :** `{bot['bot_id']}`\n"
+                chunk_text += f"**ʙᴏᴛ ɴᴀᴍᴇ :** {bot['name']}\n"
+                chunk_text += f"**ʙᴏᴛ ᴜsᴇʀɴᴀᴍᴇ :** @{bot['username']}\n"
+                chunk_text += f"**ᴏᴡɴᴇʀ :** [{owner_name}]({owner_profile_link})\n\n"
 
             await message.reply_text(chunk_text)
 
@@ -336,7 +336,7 @@ async def list_cloned_bots(client, message, _):
             return
 
         total_clones = len(cloned_bots)
-        text = f"**Tᴏᴛᴀʟ Cʟᴏɴᴇᴅ Bᴏᴛs: `{total_clones}`**\n\n"         
+        text = f"**ᴛᴏᴛᴀʟ ᴄʟᴏɴᴇᴅ ʙᴏᴛs : `{total_clones}`**\n\n"         
 
         await message.reply_text(text)
     except Exception as e:
