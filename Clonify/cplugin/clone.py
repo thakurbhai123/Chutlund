@@ -12,7 +12,7 @@ from .utils import StartTime
 from Clonify.utils import get_readable_time
 from Clonify.utils.decorators.language import language
 
-APP_LINK = f"https://t.me/AqiaBot"
+APP_LINK = f"https://t.me/MayaMusicRobot"
 
 
 @Client.on_message(filters.command("clone"))
@@ -25,7 +25,7 @@ async def ping_clone(client: Client, message: Message, _):
         photo=random.choice(STREAMI_PICS), caption=_["NO_CLONE_MSG"],
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Cʟᴏɴᴇ Bᴏᴛ", url=APP_LINK)]
+                [InlineKeyboardButton("ɢᴏ ᴀɴᴅ ᴄʟᴏɴᴇ", url=APP_LINK)]
             ]
         )
     )
