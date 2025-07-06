@@ -6,7 +6,7 @@ from Clonify import app
 
 #--------------------------
 
-MUST_JOIN = "PURVI_SUPPORT"
+MUST_JOIN = "About_badnam_xd"
 
 #--------------------------
 
@@ -29,7 +29,7 @@ async def must_join_channel(app: Client, msg: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("๏ ᴊᴏɪɴ ๏", url=link),
+                                InlineKeyboardButton("๏ ʝσιɳ ɠɾσυρ ๏", url=link),
                             ]
                         ]
                     )
