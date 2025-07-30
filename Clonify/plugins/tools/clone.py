@@ -28,7 +28,7 @@ from config import SUPPORT_CHAT, OWNER_ID
 from datetime import datetime
 CLONES = set()
 
-C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪᴛ: @Meow_x_robot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n - Uᴘᴅᴀᴛᴇ: @About_badnam_xd\n - Sᴜᴘᴘᴏʀᴛ: @About_badnam_xd"
+C_BOT_DESC = "Wᴀɴᴛ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs? Cʟᴏɴᴇ ɪᴛ ɴᴏᴡ! ✅\n\nVɪsɪᴛ: @Spotifyofficialrebot ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!\n\n - Uᴘᴅᴀᴛᴇ: @ganaasupport\n - Sᴜᴘᴘᴏʀᴛ: @ganaasupport"
 
 C_BOT_COMMANDS = [
                 {"command": "/start", "description": "sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ"},
@@ -134,7 +134,7 @@ async def clone_txt(client, message, _):
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**ᴋɪɴᴅʟʏ ғᴏᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @KRITI_UPDATE ᴛᴏ ɢᴇᴛ ᴀssɪsᴛᴀɴᴄᴇ**"
+                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**ᴋɪɴᴅʟʏ ғᴏᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @ganaasupport ᴛᴏ ɢᴇᴛ ᴀssɪsᴛᴀɴᴄᴇ**"
             )
     else:
         await message.reply_text(_["C_B_H_1"])
